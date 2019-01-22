@@ -1,0 +1,414 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Harvest Season</title>
+    <link rel="shortcut icon" type="image/png" href="image/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css " />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="loading-button text-primary">
+        <i class="fa fa-spinner fa-spin fa-10x"></i>Loading
+    </div>
+    <div class="loading">
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light  header-content col-12 mt-0 pt-0 mb-0 pb-0">
+                <p class="col-7 navbar-nav mr-auto text-success">HOTLINE:0908770095</p>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hotline"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class=" col-5 collapse navbar-collapse" id="hotline">
+                    <ul class="navbar-nav mr-auto" class="navbar-nav mr-auto">
+                        <a class="nav-link" href="#"> Kiểm tra đơn hàng </a>
+                        <a class="nav-link" href="#"> Giỏ hàng </a>
+                        <a class="nav-link" href="#"> Đăng nhập </a>
+                        <a class="nav-link" href="#"> Đăng ký </a>
+                    </ul>
+                </div>
+            </nav>
+            <hr class="mt-0 pt-0 mb-1 pb-1">
+            <nav class="navbar navbar-expand-lg navbar-light  header-content sticky col-12 mt-0 pt-0 mb-0 pb-0">
+                <a class="nav-brand mb-1 col-lg-3 " href="index.html">
+                    <img src="image/logo.png" max-height="50" max-width="162">
+                </a>
+                <div class="col-lg-4"></div>
+                <div class=" col-lg-5 collapse navbar-collapse">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <ul class="navbar-nav mr-auto">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> 0 sp - 0đ</a>
+                    </ul>
+                </div>
+            </nav>
+            <hr class="mt-0 mb-1 pt-0 pb-0">
+            <nav class="navbar navbar-expand-lg navbar-light  header-content col-12 stickyEnd mt-0 pt-0 mb-0 pb-0 ">
+                <div class="col-1"></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#homeNav"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-11 collapse navbar-collapse ml-0 pl-0" id="homeNav">
+                    <ul class=" navbar-nav mr-auto">
+                        <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                        <a class="nav-link" href="index.html">GIỚI THIỆU</a>
+                        <a class="nav-link" href="index.html">SẢN PHẢM </a>
+                        <a class="nav-link" href="index.html">DỊCH VỤ</a>
+                        <a class="nav-link" href="index.html">TIN TỨC</a>
+                        <a class="nav-link" href="index.html">THƯ VIỆN ẢNH</a>
+                        <a class="nav-link" href="index.html">LIÊN HỆ</a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <section class="container">
+
+            <!-- Gallary Image / HideShow-slide -->
+            <div class="row mb-5">
+                <div class="col-12 gallery ">
+                    <img src="image/1.jpg" class="img-fluid gallerySize" imgIndex="0">
+                    <img src="image/2.jpg" class="img-fluid gallerySize" imgIndex="1" style="display:none">
+                    <img src="image/3.jpg" class="img-fluid gallerySize" imgIndex="2" style="display:none">
+                    <div class=" text-center nextButton">
+                        <a  id="gallery-prev"><i class="fas fa-backward fa-2x btn btn-secondary mt-3 "></i></a>
+                        <a  id="gallery-next"><i class="fas fa-forward fa-2x btn btn-secondary mt-3"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid Product / Horizontal-slide -->
+            <div>
+                <div class="row pl-3">
+                    <h4 class="mb-0 pb-0 col-lg-3"><i class="fas fa-seedling"></i> Sản phẩm hot </h4>
+                    <div class="col-lg-7"></div>
+                    <div class=" col-lg-2 text-center nextButton">
+                        <a class="btn" id="slide-prev"><i class="fas fa-backward  "></i></a>
+                        <a class="btn" id="slide-next"><i class="fas fa-forward "></i></a>
+                    </div>
+                </div>
+                <hr class="mt-0 mb-3 pt-0 pb-3">
+                <div id="slide-stage">
+                    <div class="slide-holder row">
+                        <div class="slide text-center ">
+                            <img class="overlay" src="image/product1.png">
+                            <div class="text-center ">
+                                <p class="btn">QUẢ PORTTITOR</p>
+                                <p class="text-danger fa-2x">10 USD</p>
+                                <button class="btn btn-primary">Mua</button>
+                            </div>
+                        </div>
+                        <div class="slide text-center ">
+                            <img class="overlay" src="image/product2.png">
+                            <div class="text-center ">
+                                <p class="btn">Quả Cam</p>
+                                <p><span class="text-danger fa-2x ">7 USD </span><del> 10 USD</del></p>
+                                <button class="btn btn-primary">Mua</button>
+                            </div>
+                        </div>
+                        <div class="slide text-center ">
+                            <img class="overlay" src="image/product3.png">
+                            <div class="text-center ">
+                                <p class="btn">Quả Quýt</p>
+                                <p><span class="text-danger fa-2x ">5 USD </span><del> 7 USD</del></p>
+                                <button class="btn btn-primary">Mua</button>
+                            </div>
+                        </div>
+                        <div class="slide text-center ">
+                            <img class="overlay" src="image/product4.png">
+                            <div class="text-center ">
+                                <p class="btn">Quả Dừa</p>
+                                <p><span class="text-danger fa-2x ">15 USD </span><del> 17 USD</del></p>
+                                <button class="btn btn-primary">Mua</button>
+                            </div>
+                        </div>
+                        <div class="slide text-center ">
+                            <img class="overlay" src="image/product5.png">
+                            <div class="text-center ">
+                                <p class="btn">Quả Dứa</p>
+                                <p><span class="text-danger fa-2x ">3 USD </span><del> 7 USD</del></p>
+                                <button class="btn btn-primary">Mua</button>
+                            </div>
+                        </div>
+                        <div class="slide text-center ">
+                            <img class="overlay" src="image/product6.png">
+                            <div class="text-center ">
+                                <p class="btn">Quả Thanh Long</p>
+                                <p><span class="text-danger fa-2x ">5 USD </span><del> 6 USD</del></p>
+                                <button class="btn btn-primary">Mua</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5 mb-5">
+                        <img class="btn" src="image/home_bannercenter.png">
+                    </div>
+                </div>
+            </div>
+
+            <!--  Grid-Product/ Overlay Fade -->
+            <div>
+                <div class="row pl-3 mt-5">
+                    <h4 class="mb-0 pb-0"><i class="fas fa-seedling"></i> Sản phẩm </h4>
+                </div>
+                <hr class="mt-0 mb-3 pt-0 pb-3">
+                <div class="row clear-fix">
+                    <div class="float-left">
+                        <i class=" fas fa-th-large fa-2x text-success  float-left mr-1 "></i>
+                        <i class=" fas fa-list-ul fa-2x float-left mr-5"></i>
+                        <span class=" pt-2 float-left mr-2">Sản phẩm/trang </span>
+                        <div class="form-group  float-left ">
+                            <select class="form-control " id="gridSelect">
+                                <option>10</option>
+                                <option>12</option>
+                                <option>20</option>
+                                <option>50</option>
+                                <option>100</option>
+                                <option>250</option>
+                                <option>500</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-5"></div>
+                    <div class="float-right">
+                        <div class="form-group d-inline  float-right  ">
+                            <select class="form-control " id="gridSelect">
+                                <option>Mặc định</option>
+                                <option>Giá tăng dần</option>
+                                <option>Giá giảm dần</option>
+                                <option>Tên sản phẩm: A to Z</option>
+                                <option>Tên sản phẩm: Z to A</option>
+                            </select>
+                        </div>
+                        <span class="pt-2 d-inline float-right mr-2">Sắp xếp </span>
+                    </div>
+
+
+                </div>
+
+
+                <div class="row mb-5">
+                    <div class="col-lg-3 mb-2 text-center">
+                        <img class="align-self-center overlay" src="image/product1.png">
+                        <div class="text-center ">
+                            <p class="btn">Quả Thanh Long</p>
+                            <p><span class="text-danger fa-2x ">6 USD </span><del> 10 USD</del></p>
+                            <button class="btn btn-primary">Mua</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2 text-center">
+                        <img class="align-self-center overlay" src="image/product2.png">
+                        <div class="text-center ">
+                            <p class="btn">Quả Quất</p>
+                            <p><span class="text-danger fa-2x ">5 USD </span><del> 6 USD</del></p>
+                            <button class="btn btn-primary">Mua</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2 text-center">
+                        <img class="align-self-center overlay" src="image/product1.png">
+                        <div class="text-center ">
+                            <p class="btn">Quả Cam</p>
+                            <p><span class="text-danger fa-2x ">6 USD </span><del> 7 USD</del></p>
+                            <button class="btn btn-primary">Mua</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2 text-center">
+                        <img class="align-self-center overlay" src="image/product6.png">
+                        <div class="text-center ">
+                            <p class="btn">Quả Quýt</p>
+                            <p><span class="text-danger fa-2x ">3 USD </span><del> 6 USD</del></p>
+                            <button class="btn btn-primary">Mua</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-3 mb-2 text-center">
+                        <img class="align-self-center overlay" src="image/product4.png">
+                        <div class="text-center ">
+                            <p class="btn">Quả Cà Chua</p>
+                            <p><span class="text-danger fa-2x ">1 USD </span><del> 3 USD</del></p>
+                            <button class="btn btn-primary">Mua</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2 text-center">
+                        <img class="align-self-center overlay" src="image/product6.png">
+                        <div class="text-center ">
+                            <p class="btn">Quả Vú Sữa</p>
+                            <p><span class="text-danger fa-2x ">2 USD </span><del> 8 USD</del></p>
+                            <button class="btn btn-primary">Mua</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2 text-center">
+                        <img class="align-self-center overlay" src="image/product1.png">
+                        <div class="text-center ">
+                            <p class="btn">Quả Dứa</p>
+                            <p><span class="text-danger fa-2x ">5 USD </span><del> 6 USD</del></p>
+                            <button class="btn btn-primary">Mua</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2 text-center">
+                        <img class="align-self-center overlay" src="image/product4.png">
+                        <div class="text-center ">
+                            <p class="btn">Quả Dừa</p>
+                            <p><span class="text-danger fa-2x ">3 USD </span><del> 6 USD</del></p>
+                            <button class="btn btn-primary">Mua</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--  Grid-Product/ Overlay Zoom -->
+            <div>
+                <div class="row pl-3 mt-5">
+                    <h4 class="mb-0 pb-0"><i class="fas fa-seedling"></i>Dịch vụ</h4>
+                </div>
+                <hr class="mt-0 mb-3 pt-0 pb-3">
+                <div class="row mb-5">
+                    <div class="col-lg-3 text-center ">
+                        <img class="border-circle  " src="image/nhahang.jpg">
+                        <p><strong>Dịch vụ nhà hàng</strong></p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img class="border-circle" src="image/hotel.jpg">
+                        <p><strong>Dịch vụ khách sạn</strong></p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img class="border-circle" src="image/weddign.jpg">
+                        <p><strong>Dịch vụ tiệc cưới</strong></p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img class="border-circle" src="image/event.jpg">
+                        <p><strong>Sự kiện</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Image Gallary / Modal Images  -->
+            <div>
+                <div class="row pl-3 mt-5">
+                    <h4 class="mb-0 pb-0"><i class="fas fa-seedling"></i>Thư viện ảnh</h4>
+                </div>
+                <hr class="mt-0 mb-3 pt-0 pb-3">
+                <div class="row mb-5">
+                    <div class="col-lg-3 text-center ">
+                        <div class="border">
+                            <img class="overlay" src="image/store1.jpg" width="253" height="200">
+                            <p class="footer-image"><strong>Store 1</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-center ">
+                        <div class="border">
+                            <img class="overlay" src="image/store2.jpg" width="253" height="200">
+                            <p class="footer-image"><strong>Store 2</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-center ">
+                        <div class="border">
+                            <img class="overlay" src="image/store3.jpg" width="253" height="200">
+                            <p class="footer-image"><strong>Store 3</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-center ">
+                        <div class="border">
+                            <img class="overlay" src="image/store4.jpg" width="253" height="200">
+                            <p class="footer-image"><strong>Store 4</strong></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--  Partner / professionHorizontal-Slide  -->
+                <div>
+                    <div class="row pl-3 mt-5">
+                        <h4 class="mb-0 pb-0 col-lg-3"><i class="fas fa-seedling"></i>Đối tác</h4>
+                        <div class="col-lg-7"></div>
+                        <div class=" text-center nextButton col-lg-2">
+                            <a class="btn" id="partner-prev"><i class="fas fa-backward  "></i></a>
+                            <a class="btn" id="partner-next"><i class="fas fa-forward  "></i></a>
+                        </div>
+                    </div>
+                    <hr class="mt-0 mb-3 pt-0 pb-3">
+                    <div class="mb-5 partner-overflow  justify-content-center">
+                        <div class="partner-holder d-flex  justify-content-center">
+                            <img class="float-lg-left pl-5 pr-5 partner-logo" src="image/partner1.jpg">
+                            <img class="float-lg-left pl-5 pr-5 partner-logo" src="image/partner2.jpg">
+                            <img class="float-lg-left pl-5 pr-5 partner-logo" src="image/partner3.jpg">
+                            <img class="float-lg-left pl-5 pr-5 partner-logo" src="image/partner4.jpg">
+                            <img class="float-lg-left pl-5 pr-5 partner-logo" src="image/partner5.jpg">
+                            <img class="float-lg-left pl-5 pr-5 partner-logo" src="image/partner6.jpg">
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="scrollTop">
+                <button class="btn btn-secondary"><i class="fas fa-arrow-up fa-2x"></i></button>
+            </div>
+        </section>
+
+
+
+        <footer class="container mb-5">
+            <hr><br>
+            <div class="row">
+                <div class="col-lg-3  ">
+                    <div class="d-flex  justify-content-center">
+                        <img src="image/logo.png" />
+                    </div>
+                    <p class="mb-4"><strong>CÔNG TY TNHH PHÁT TRIỂN CÔNG NGHỆ RUNTIME</strong></p>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt"></i> 5/12A Quang Trung, P.14, Q.Gò Vấp, Tp.Hồ Chí
+                        Minh</p>
+                    <p class=" mb-2 text-muted"><i class="fas fa-envelope"></i> info@runtime.vn</p>
+                    <p class="mb-2"><i class="fas fa-phone-volume"></i> Phone: (08) 85 85 66 38</p>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5><i class="fas fa-seedling mb-3 "> NHÀ HÀNG</i></h5>
+                    <a class="nav-link text-dark" href="#">Giới thiệu nhà hàng</a>
+                    <a class="nav-link text-dark" href="#">Thực đơn</a>
+                    <a class="nav-link text-dark" href="#">Nhà hàng và Buffet</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5><i class="fas fa-seedling mb-3 "> KHÁCH SẠN</i></h5>
+                    <a class="nav-link text-dark" href="#">Giới thiệu về khách sạn</a>
+                    <a class="nav-link text-dark" href="#">Loại phòng và đặt phòng</a>
+                    <a class="nav-link text-dark" href="#">Tiện ích và dịch vụ</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5><i class="fas fa-seedling mb-3 "> MẠNG XÃ HỘI</i></h5>
+                    <a class="nav-link text-success" href="#"><i class="fab fa-google-plus-square fa-2x"></i></a>
+                    <a class="nav-link text-success" href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                    <a class="nav-link text-success" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a class="nav-link text-success" href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                </div>
+
+
+            </div>
+        </footer>
+
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

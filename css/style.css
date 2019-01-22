@@ -1,0 +1,83 @@
+header .fixed{
+    max-width: 100%;
+    background-color: whitesmoke; 
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5); /*Đổ bóng cho menu*/
+    border-radius: 0px 0px 3px 3px;
+    position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+    top: 0; /*Nằm trên cùng*/
+    left: 0; /*Nằm sát bên trái*/
+    z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+.gallery{
+    overflow: hidden; /*...  Hide the overflow elements ... */
+}
+.gallerySize {
+    min-width: 100%;
+    max-height: 450px;
+}
+
+#slide-stage{
+    width: 100%; /*  .... (img_width + margin_right)*4 ....  */
+    overflow: hidden;   /*...  Hide the overflow elements ... */
+}
+#slide-stage .slide-holder {
+    width: 2121px; /*  .... (img_width + margin_right)*7 ....  */
+    position: relative;
+}
+#slide-stage .slide-holder .slide  {
+    width: 263px;
+    clear: both;
+    
+    /* float: left; */
+    margin-left: 16px;
+    margin-right:24px; 	
+    display: inline-block;
+}
+.overlay-on {
+    opacity: 0.5; /*...decrease the opacity */
+    filter: grayscale(50%); /*...decrease the satuuration */
+}
+.border-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid gainsboro ;
+}
+.scale-up {
+    transform : scale(1.04);
+}
+.footer-image{
+    background-color: #22B14C;
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 0 0 ;
+    color: white;
+}
+.partner-overflow {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    
+}
+.partner-holder {
+    width: 1110px;
+    height: 70px;
+    position: relative;
+    display: block;
+   
+}
+.loading-button{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  
+}
+.scrollTop{
+    max-width: 100%;
+    position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+    bottom: 50px;
+    right: 50px; /*Nằm sát bên phải*/
+    z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
